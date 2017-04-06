@@ -1,0 +1,38 @@
+PODS:
+  - KIF (3.5.1):
+    - KIF/Core (= 3.5.1)
+  - KIF/Core (3.5.1)
+  - Nimble (5.1.1)
+  - OHHTTPStubs (4.7.1):
+    - OHHTTPStubs/Default (= 4.7.1)
+  - OHHTTPStubs/Core (4.7.1)
+  - OHHTTPStubs/Default (4.7.1):
+    - OHHTTPStubs/Core
+    - OHHTTPStubs/JSON
+    - OHHTTPStubs/NSURLSession
+    - OHHTTPStubs/OHPathHelpers
+  - OHHTTPStubs/JSON (4.7.1):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/NSURLSession (4.7.1):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/OHPathHelpers (4.7.1)
+  - Quick (1.0.0)
+  - SwiftString3 (1.0.11)
+
+DEPENDENCIES:
+  - KIF
+  - Nimble
+  - OHHTTPStubs (~> 4.7.0)
+  - Quick (~> 1.0.0)
+  - SwiftString3
+
+SPEC CHECKSUMS:
+  KIF: 082eb65279e51c3092923802849eb796a04982ab
+  Nimble: 415e3aa3267e7bc2c96b05fa814ddea7bb686a29
+  OHHTTPStubs: f7d1604d04d37d055460c0ef9af01bb249ded0fa
+  Quick: 8024e4a47e6cc03a9d5245ef0948264fc6d27cff
+  SwiftString3: 1de59016efce9b4a9adb491995f74ef50d0aa920
+
+PODFILE CHECKSUM: 428c401e27a318e684861d321c4f3240fb7dd32f
+
+COCOAPODS: 1.2.0
