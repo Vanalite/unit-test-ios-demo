@@ -21,6 +21,11 @@
                BlueprintName = "TestDemoTests"
                ReferencedContainer = "container:TestDemo.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "StringExtensionsSpec">
+               </Test>
+            </SkippedTests>
          </TestableReference>
       </Testables>
       <AdditionalOptions>

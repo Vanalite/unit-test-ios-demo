@@ -9,7 +9,11 @@
 import Foundation
 
 class Calculator {
-	var usageCount = 0
+	var usageCount: Int
+
+	init() {
+		usageCount = 0
+	}
 
 	func factorial(n: Int) -> Int? {
 		if n < 0 {
