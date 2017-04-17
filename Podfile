@@ -11,6 +11,9 @@ target 'TestDemo' do
   # Pods for TestDemo
 	pod 'Quick', '~> 1.0.0', :configurations => ['Debug']
 	pod 'Nimble'
+
+
+	#Additional pods
 	pod 'OHHTTPStubs', '~> 4.7.0', :configurations => ['Debug']
 	pod 'KIF'
 	pod 'SwiftString3'
