@@ -9,12 +9,14 @@
 import Foundation
 
 class Calculator {
+	var usageCount = 0
 
-
-	static func factorial(n: Int) -> Int? {
+	func factorial(n: Int) -> Int? {
 		if n < 0 {
 			return nil
 		}
+
+		usageCount += 1
 		var factorial = 1
 		for i in 1..<n+1 {
 			factorial *= i

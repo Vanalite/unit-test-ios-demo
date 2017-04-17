@@ -11,8 +11,11 @@ import XCTest
 
 class CalculatorTest: XCTestCase {
 
+	lazy var calculator = Calculator()
+
 	override func setUp() {
 		super.setUp()
+		calculator.usageCount = 2
 	}
 
 	override func tearDown() {
@@ -20,12 +23,15 @@ class CalculatorTest: XCTestCase {
 	}
 
 	func testFactorialOfNegativeInteger() {
-		XCTAssert(Calculator.factorial(n: -3) == nil)
+		XCTAssert(calculator.factorial(n: -3) == nil)
+		XCTAssert(calculator.usageCount == 2)
 	}
 
 	func testFactorialOfNonNegativeInteger() {
-		XCTAssert(Calculator.factorial(n: 3) == 6)
-		XCTAssert(Calculator.factorial(n: 0) == 0)
+		XCTAssert(calculator.factorial(n: 3) == 6)
+		XCTAssert(calculator.usageCount == 3)
+		XCTAssert(calculator.factorial(n: 0) == 1)
+		XCTAssert(calculator.usageCount == 4)
 	}
 
 }
